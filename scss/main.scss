@@ -1,0 +1,119 @@
+@import "./resets";
+@import "./variables";
+
+body {
+  background-color: $blue-veryDark;
+  font-family: $font-overpass;
+  height: 100vh;
+
+  @include flexCenter;
+}
+
+.container {
+  background-color: $blue-dark;
+  padding: 2.4rem;
+  border-radius: 1.6rem;
+  width: 40rem;
+  margin: 0 1.6rem;
+}
+
+// RATING STATE
+
+.icon-star {
+  background-color: hsla(216, 12%, 54%, 0.1);
+  border-radius: 100rem;
+  padding: 1.2rem;
+  margin-bottom: 2.4rem;
+}
+
+.heading-primary {
+  font-size: 2.4rem;
+  color: $white;
+  font-weight: 700;
+  margin-bottom: 1.2rem;
+}
+
+.description {
+  font-size: $paragraph-default;
+  color: $grey-light;
+  margin-bottom: 1.6rem;
+}
+
+.rating {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2.4rem;
+}
+
+.btn-rating {
+  font-size: 1.6rem;
+  color: $grey-light;
+  background-color: hsla(216, 12%, 54%, 0.1);
+  border: none;
+  border-radius: 100rem;
+  @include flexCenter;
+  width: 4.8rem;
+  height: 4.8rem;
+  cursor: pointer;
+}
+
+.btn-submit {
+  font-size: 1.6rem;
+  border-radius: 100rem;
+  padding: 0.8rem 1.6rem;
+  letter-spacing: 2px;
+  width: 100%;
+  border: none;
+  color: $white;
+  text-transform: uppercase;
+  background-color: $orange;
+  cursor: pointer;
+}
+
+.btn-rating:hover {
+  background-color: $grey-light;
+  color: $white;
+}
+
+.btn-rating:active {
+  background-color: $orange;
+  color: $white;
+}
+
+.btn-submit:hover,
+.btn-submit:active {
+  background-color: $white;
+  color: $orange;
+}
+
+// THANK YOU STATE
+.thank-you-state {
+  @include flexCenter(column);
+  text-align: center;
+}
+
+.rating-illustration {
+  margin-bottom: 2.4rem;
+}
+
+.rating-selected {
+  background-color: hsla(216, 12%, 54%, 0.1);
+  color: hsla(25, 97%, 53%, 0.8);
+  font-size: 1.4rem;
+  padding: 0.6rem 1.2rem;
+  border-radius: 100rem;
+  margin-bottom: 2.4rem;
+}
+
+.hidden {
+  display: none;
+}
+
+// Attribution
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
