@@ -82,6 +82,9 @@ select {
 body {
   background-color: hsl(216, 12%, 8%);
   font-family: "Overpass", sans-serif;
+}
+
+.container {
   height: 100vh;
   display: flex;
   align-items: center;
@@ -89,7 +92,7 @@ body {
   flex-direction: row;
 }
 
-.container {
+.app-container {
   background-color: hsl(213, 19%, 18%);
   padding: 2.4rem;
   border-radius: 1.6rem;
@@ -193,10 +196,13 @@ body {
 }
 
 .attribution {
-  font-size: 11px;
+  background-color: hsl(213, 19%, 18%);
+  color: hsl(217, 12%, 63%);
+  padding: 1.6rem;
+  font-size: 1.4rem;
   text-align: center;
 }
 
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: hsl(0, 0%, 100%);
 }/*# sourceMappingURL=main.css.map */

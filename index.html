@@ -17,54 +17,56 @@
     <title>Frontend Mentor | Interactive rating component</title>
   </head>
   <body>
-    <section class="container">
-      <!-- Rating state start -->
-      <div class="rating-state">
-        <img class="icon-star" src="images/icon-star.svg" alt="Star icon" />
-        <h1 class="heading-primary">How did we do?</h1>
-        <p class="description">
-          Please let us know how we did with your support request. All feedback
-          is appreciated to help us improve our offering!
-        </p>
+    <div class="container">
+      <main class="app-container">
+        <!-- Rating state start -->
+        <div class="rating-state">
+          <img class="icon-star" src="images/icon-star.svg" alt="Star icon" />
+          <h1 class="heading-primary">How did we do?</h1>
+          <p class="description">
+            Please let us know how we did with your support request. All
+            feedback is appreciated to help us improve our offering!
+          </p>
 
-        <div class="rating">
-          <button data-rating-value="1" class="btn-rating">1</button>
-          <button data-rating-value="2" class="btn-rating">2</button>
-          <button data-rating-value="3" class="btn-rating">3</button>
-          <button data-rating-value="4" class="btn-rating">4</button>
-          <button data-rating-value="5" class="btn-rating">5</button>
+          <div class="rating">
+            <button data-rating-value="1" class="btn-rating">1</button>
+            <button data-rating-value="2" class="btn-rating">2</button>
+            <button data-rating-value="3" class="btn-rating">3</button>
+            <button data-rating-value="4" class="btn-rating">4</button>
+            <button data-rating-value="5" class="btn-rating">5</button>
+          </div>
+          <button class="btn-submit">Submit</button>
         </div>
-        <button class="btn-submit">Submit</button>
-      </div>
-      <!-- Rating state end -->
+        <!-- Rating state end -->
 
-      <!-- Thank you state start -->
-      <div class="thank-you-state hidden">
-        <!-- Add rating here -->
-        <figure class="selected">
-          <img
-            class="rating-illustration"
-            src="images/illustration-thank-you.svg"
-            alt="Thank you illustration"
-          />
-          <figcaption class="rating-selected">
-            You selected 4 out of 5
-          </figcaption>
-        </figure>
-        <h1 class="heading-primary">Thank you!</h1>
-        <p class="description">
-          We appreciate you taking the time to give a rating. If you ever need
-          more support, don’t hesitate to get in touch!
-        </p>
-        <!-- Thank you state end -->
-      </div>
-    </section>
-
-    <!-- <div class="attribution">
+        <!-- Thank you state start -->
+        <div class="thank-you-state hidden">
+          <!-- Add rating here -->
+          <figure class="selected">
+            <img
+              class="rating-illustration"
+              src="images/illustration-thank-you.svg"
+              alt="Thank you illustration"
+            />
+            <figcaption class="rating-selected">
+              You selected 4 out of 5
+            </figcaption>
+          </figure>
+          <h1 class="heading-primary">Thank you!</h1>
+          <p class="description">
+            We appreciate you taking the time to give a rating. If you ever need
+            more support, don’t hesitate to get in touch!
+          </p>
+          <!-- Thank you state end -->
+        </div>
+      </main>
+    </div>
+    <div class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
-    </div> -->
+      >. Coded by
+      <a href="https://github.com/nastaj" target="_blank">Jakub Nasta</a> ❤️
+    </div>
   </body>
 </html>

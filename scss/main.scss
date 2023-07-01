@@ -4,12 +4,15 @@
 body {
   background-color: $blue-veryDark;
   font-family: $font-overpass;
+}
+
+.container {
   height: 100vh;
 
   @include flexCenter;
 }
 
-.container {
+.app-container {
   background-color: $blue-dark;
   padding: 2.4rem;
   border-radius: 1.6rem;
@@ -111,9 +114,13 @@ body {
 
 // Attribution
 .attribution {
-  font-size: 11px;
+  background-color: $blue-dark;
+  color: $grey-light;
+  padding: 1.6rem;
+  font-size: 1.4rem;
   text-align: center;
 }
+
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: $white;
 }
